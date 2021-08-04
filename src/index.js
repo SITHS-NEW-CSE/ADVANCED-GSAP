@@ -14,9 +14,9 @@ gsap.effects.fade(".box"); // you can call an effect by writing gsap.effects.nam
 
 let tl = gsap.timeline();
 
-tl.fade(".box4"); // you can call an effect on a timeline by calling timelineName.name(class)
-tl.fade(".box5");
-tl.fade(".box6");
+tl.fade(".box4") // you can call an effect on a timeline by calling timelineName.name(class)
+  .fade(".box5")
+  .fade(".box6");
 
 document.querySelectorAll(".crazy-box").forEach(function (crazyBox) {
   // you can also use effects in querySelectors so it plays based off an event listener
